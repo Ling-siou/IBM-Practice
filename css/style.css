@@ -1,0 +1,16 @@
+@import "normalize.css";
+@import "grids.css";
+@import "main.css";
+
+p{
+    margin: 0px;
+}
+
+ul{
+    padding-left: 0px;
+    margin: 0px;
+}
+
+li{
+    list-style: none;
+}

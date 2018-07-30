@@ -7,4 +7,4 @@
     storageBucket: "practicing-lhliao-18-0723.appspot.com",
     messagingSenderId: "275078980074"
   };
-  firebase.initializeApp(config);
+  firebase.initializeApp(config); 

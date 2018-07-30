@@ -4,6 +4,7 @@
   "description": "for pracitce",
   "main": "index.js",
   "scripts": {
+    "build-CSS": "node-sass -w ./css/main.scss ./css/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Ling-siou/IBM-Practice/issues"
   },
-  "homepage": "https://github.com/Ling-siou/IBM-Practice#readme"
+  "homepage": "https://github.com/Ling-siou/IBM-Practice#readme",
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  }
 }

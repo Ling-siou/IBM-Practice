@@ -1,0 +1,152 @@
+body {
+  background-color: #eee; }
+
+.header {
+  background: #424242;
+  padding: 70px 0; }
+  .header > div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header > div > div {
+      margin-left: 30px; }
+    .header > div .input-text-in-header {
+      display: flex;
+      flex-direction: column; }
+      .header > div .input-text-in-header .input-group label {
+        width: 100%;
+        display: block;
+        color: #FFD366;
+        margin-bottom: 5px; }
+      .header > div .input-text-in-header .input-group input[type="text"] {
+        width: 100%;
+        display: block;
+        background: rgba(255, 255, 255, 0.18);
+        border: 2px solid #FFD366;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        height: 40px;
+        box-sizing: border-box; }
+        .header > div .input-text-in-header .input-group input[type="text"]::placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          font-size: 24px;
+          color: rgba(255, 255, 255, 0.5); }
+    .header > div .send-in-header > div {
+      display: inline-block;
+      vertical-align: middle; }
+      .header > div .send-in-header > div > div.yellow-btn {
+        display: block;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        background: #FFD366;
+        position: relative; }
+        .header > div .send-in-header > div > div.yellow-btn p {
+          text-align: center;
+          line-height: 120px; }
+        .header > div .send-in-header > div > div.yellow-btn:hover {
+          box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64); }
+        .header > div .send-in-header > div > div.yellow-btn:active {
+          background: #DEA821; }
+        .header > div .send-in-header > div > div.yellow-btn .redo {
+          display: none;
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          border: 3px solid #424242;
+          position: absolute;
+          z-index: 9;
+          right: 0px;
+          bottom: 0px; }
+        .header > div .send-in-header > div > div.yellow-btn.sended {
+          background: none;
+          border: 6px solid; }
+          .header > div .send-in-header > div > div.yellow-btn.sended.green {
+            border-color: #86D73F;
+            color: #86D73F; }
+            .header > div .send-in-header > div > div.yellow-btn.sended.green .redo {
+              background-color: #86D73F; }
+          .header > div .send-in-header > div > div.yellow-btn.sended.blue {
+            border-color: #31BAF9;
+            color: #31BAF9; }
+            .header > div .send-in-header > div > div.yellow-btn.sended.blue .redo {
+              background-color: #31BAF9; }
+          .header > div .send-in-header > div > div.yellow-btn.sended.orange {
+            border-color: #FF982D;
+            color: #FF982D; }
+            .header > div .send-in-header > div > div.yellow-btn.sended.orange .redo {
+              background-color: #FF982D; }
+          .header > div .send-in-header > div > div.yellow-btn.sended.fat-orange {
+            border-color: #FF6C03;
+            color: #FF6C03; }
+            .header > div .send-in-header > div > div.yellow-btn.sended.fat-orange .redo {
+              background-color: #FF6C03; }
+          .header > div .send-in-header > div > div.yellow-btn.sended.red {
+            border-color: #FF1200;
+            color: #FF1200; }
+            .header > div .send-in-header > div > div.yellow-btn.sended.red .redo {
+              background-color: #FF1200; }
+          .header > div .send-in-header > div > div.yellow-btn.sended .redo {
+            display: block; }
+    .header > div .send-in-header .result.green {
+      color: #86D73F; }
+    .header > div .send-in-header .result.blue {
+      color: #31BAF9; }
+    .header > div .send-in-header .result.orange {
+      color: #FF982D; }
+    .header > div .send-in-header .result.fat-orange {
+      color: #FF6C03; }
+    .header > div .send-in-header .result.red {
+      color: #FF1200; }
+
+.container {
+  padding-top: 48px; }
+  .container .title {
+    padding-bottom: 36px; }
+    .container .title p {
+      font-size: 24px;
+      color: #424242;
+      text-align: center; }
+  .container .report {
+    padding-bottom: 74px; }
+    .container .report > div {
+      display: block;
+      margin: auto; }
+      .container .report > div > ul > li {
+        padding: 20px 0px;
+        margin-bottom: 16px;
+        background-color: #fff; }
+        .container .report > div > ul > li > div {
+          display: inline-block;
+          vertical-align: middle;
+          width: 19%;
+          color: #424242;
+          font-size: 12px;
+          text-align: center; }
+          .container .report > div > ul > li > div:first-child {
+            text-align: left; }
+          .container .report > div > ul > li > div span {
+            font-size: 20px;
+            margin-left: 7px; }
+          .container .report > div > ul > li > div.left-line {
+            width: 7px; }
+            .container .report > div > ul > li > div.left-line .green-line {
+              color: #86D73F;
+              box-shadow: 2px 0 3px 0 rgba(134, 215, 63, 0.29); }
+            .container .report > div > ul > li > div.left-line .blue-line {
+              color: #31BAF9;
+              box-shadow: 2px 0 3px 0 rgba(49, 186, 249, 0.29); }
+            .container .report > div > ul > li > div.left-line .orange-line {
+              color: #FF982D;
+              box-shadow: 2px 0 3px 0 rgba(255, 152, 45, 0.29); }
+            .container .report > div > ul > li > div.left-line .fat-orange-line {
+              color: #FF6C03;
+              box-shadow: 2px 0 3px 0 rgba(255, 108, 3, 0.29); }
+            .container .report > div > ul > li > div.left-line .red-line {
+              color: #FF1200;
+              box-shadow: 2px 0 3px 0 rgba(255, 18, 0, 0.29); }
+
+.footer {
+  background: #FFD366;
+  text-align: center;
+  padding: 17px 0px; }

@@ -1,0 +1,215 @@
+$sended-green: #86D73F;
+$sended-blue: #31BAF9;
+$sended-orange: #FF982D;
+$sended-fat-orange: #FF6C03;
+$sended-red: #FF1200;
+
+body{
+    background-color: #eee;
+}
+
+.header{
+    background: #424242;
+    padding: 70px 0;
+    >div{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        >div{
+            margin-left: 30px;
+        }
+        .logo{
+            // text-align: left;
+        }
+        .input-text-in-header{
+            display: flex;
+            flex-direction: column;
+            .input-group{
+                label{
+                    width: 100%;
+                    display: block;
+                    color: #FFD366;
+                    margin-bottom: 5px;
+                }
+                input[type="text"]{
+                    width: 100%;
+                    display: block;
+                    background: rgba(255,255,255,0.18);
+                    border: 2px solid #FFD366;
+                    border-radius: 10px;
+                    margin-bottom: 10px;
+                    height: 40px;
+                    box-sizing: border-box;
+                    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        font-size: 24px;
+                        color: rgba(255,255,255,0.50);
+                    }
+                }
+            }
+        }
+        .send-in-header{
+            >div{
+                display: inline-block;
+                vertical-align: middle;
+                >div.yellow-btn{
+                    display: block;
+                    height: 120px;
+                    width: 120px;
+                    border-radius: 50%;
+                    background: #FFD366;
+                    position: relative;
+                    p{
+                        text-align: center;
+                        line-height: 120px;
+                    }
+                    &:hover{
+                        box-shadow: 0 1px 6px 3px rgba(255,196,50,0.64);
+                    }
+                    &:active{
+                        background: #DEA821;
+                    }
+                    .redo{
+                        display: none;
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                        border: 3px solid #424242;
+                        position: absolute;
+                        z-index: 9;
+                        right: 0px;
+                        bottom: 0px;
+                    }
+                    &.sended{
+                        background: none;
+                        border: 6px solid;
+                        &.green{
+                            border-color: $sended-green;
+                            color: $sended-green;
+                            .redo{
+                                background-color: $sended-green;
+                            }
+                        }
+                        &.blue{
+                            border-color: $sended-blue;
+                            color: $sended-blue;
+                            .redo{
+                                background-color: $sended-blue;
+                            }
+                        }
+                        &.orange{
+                            border-color: $sended-orange;
+                            color: $sended-orange;
+                            .redo{
+                                background-color: $sended-orange;
+                            }
+                        }
+                        &.fat-orange{
+                            border-color: $sended-fat-orange;
+                            color: $sended-fat-orange;
+                            .redo{
+                                background-color: $sended-fat-orange;
+                            }
+                        }
+                        &.red{
+                            border-color: $sended-red;
+                            color: $sended-red;
+                            .redo{
+                                background-color: $sended-red;
+                            }
+                        }
+                        .redo{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .result{
+                &.green{
+                    color: $sended-green;
+                }
+                &.blue{
+                    color: $sended-blue;
+                }
+                &.orange{
+                    color: $sended-orange;
+                }
+                &.fat-orange{
+                    color: $sended-fat-orange;
+                }
+                &.red{
+                    color: $sended-red;
+                }
+            }
+        }
+    }
+}
+
+.container{
+    padding-top: 48px;
+    .title{
+        padding-bottom: 36px;
+        p{
+            font-size: 24px;
+            color: #424242;
+            text-align: center;
+        }
+    }
+    .report{
+        padding-bottom: 74px;
+        >div{
+            display: block;
+            margin: auto;
+            >ul{
+                >li{
+                    padding: 20px 0px;
+                    margin-bottom: 16px;
+                    background-color: #fff;
+                    >div{
+                        &:first-child{
+                            text-align: left;    
+                        }
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 19%;
+                        color: #424242;
+                        font-size: 12px;
+                        text-align: center;
+                        span{
+                            font-size: 20px;
+                            margin-left: 7px;
+                        }
+                        &.left-line{
+                            width: 7px;
+                            .green-line{
+                                color: $sended-green;
+                                box-shadow: 2px 0 3px 0 rgba(134,215,63,0.29);
+                            }
+                            .blue-line{
+                                color: $sended-blue;
+                                box-shadow: 2px 0 3px 0 rgba(49,186,249,0.29);
+                            }
+                            .orange-line{
+                                color: $sended-orange;
+                                box-shadow: 2px 0 3px 0 rgba(255,152,45,0.29);
+                            }
+                            .fat-orange-line{
+                                color: $sended-fat-orange;
+                                box-shadow: 2px 0 3px 0 rgba(255,108,3,0.29);
+                            }
+                            .red-line{
+                                color: $sended-red;
+                                box-shadow: 2px 0 3px 0 rgba(255,18,0,0.29);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    background: #FFD366;
+    text-align: center;
+    padding: 17px 0px;
+}
