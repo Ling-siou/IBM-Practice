@@ -1,6 +1,7 @@
 @import "normalize.css";
 @import "grids.css";
 @import "main.css";
+@import "notosanstc.css";
 
 p{
     margin: 0px;
@@ -13,4 +14,7 @@ ul{
 
 li{
     list-style: none;
+}
+body{
+    font-family: 'Noto Sans TC', sans-serif;
 }
