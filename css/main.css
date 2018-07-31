@@ -11,8 +11,10 @@ body {
     align-items: center;
     justify-content: space-between; }
     .header > div .input-text-in-header {
+      flex: 1;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      padding: 0 50px; }
       .header > div .input-text-in-header .input-group label {
         width: 100%;
         display: block;
