@@ -44,8 +44,9 @@ body{
                     margin-bottom: 10px;
                     height: 40px;
                     box-sizing: border-box;
+                    color: #fff;
                     &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-                        font-size: 24px;
+                        font-size: 20px;
                         color: rgba(255,255,255,0.50);
                     }
                 }
@@ -63,8 +64,19 @@ body{
                     background: #FFD366;
                     position: relative;
                     p{
+                        // display: inline-block;
                         text-align: center;
-                        line-height: 120px;
+                        position: relative;
+                        font-size: 20px;
+                        top: 50px;
+                        &.pushed{
+                            top: 40px;
+                            font-size: 32px;
+                            line-height: 20px;
+                        }
+                        span{
+                            font-size:14px; 
+                         }
                     }
                     &:hover{
                         box-shadow: 0 1px 6px 3px rgba(255,196,50,0.64);
@@ -82,39 +94,44 @@ body{
                         z-index: 9;
                         right: 0px;
                         bottom: 0px;
+                        i{
+                            color: #424242;
+                            padding-left: 7px;
+                            line-height: 31px;
+                        }
                     }
                     &.sended{
                         background: none;
                         border: 6px solid;
-                        &.green{
+                        &.green-line{
                             border-color: $sended-green;
                             color: $sended-green;
                             .redo{
                                 background-color: $sended-green;
                             }
                         }
-                        &.blue{
+                        &.blue-line{
                             border-color: $sended-blue;
                             color: $sended-blue;
                             .redo{
                                 background-color: $sended-blue;
                             }
                         }
-                        &.orange{
+                        &.orange-line{
                             border-color: $sended-orange;
                             color: $sended-orange;
                             .redo{
                                 background-color: $sended-orange;
                             }
                         }
-                        &.fat-orange{
+                        &.fat-orange-line{
                             border-color: $sended-fat-orange;
                             color: $sended-fat-orange;
                             .redo{
                                 background-color: $sended-fat-orange;
                             }
                         }
-                        &.red{
+                        &.red-line{
                             border-color: $sended-red;
                             color: $sended-red;
                             .redo{
@@ -128,19 +145,24 @@ body{
                 }
             }
             .result{
-                &.green{
+                width: 0px;
+                overflow: visible;
+                padding-left: 10px;
+                font-size: 32px;
+                white-space:nowrap;
+                .green-line{
                     color: $sended-green;
                 }
-                &.blue{
+                .blue-line{
                     color: $sended-blue;
                 }
-                &.orange{
+                .orange-line{
                     color: $sended-orange;
                 }
-                &.fat-orange{
+                .fat-orange-line{
                     color: $sended-fat-orange;
                 }
-                &.red{
+                .red-line{
                     color: $sended-red;
                 }
             }

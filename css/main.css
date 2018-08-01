@@ -28,10 +28,11 @@ body {
         border-radius: 10px;
         margin-bottom: 10px;
         height: 40px;
-        box-sizing: border-box; }
+        box-sizing: border-box;
+        color: #fff; }
         .header > div .input-text-in-header .input-group input[type="text"]::placeholder {
           /* Chrome, Firefox, Opera, Safari 10.1+ */
-          font-size: 24px;
+          font-size: 20px;
           color: rgba(255, 255, 255, 0.5); }
     .header > div .send-in-header > div {
       display: inline-block;
@@ -45,7 +46,15 @@ body {
         position: relative; }
         .header > div .send-in-header > div > div.yellow-btn p {
           text-align: center;
-          line-height: 120px; }
+          position: relative;
+          font-size: 20px;
+          top: 50px; }
+          .header > div .send-in-header > div > div.yellow-btn p.pushed {
+            top: 40px;
+            font-size: 32px;
+            line-height: 20px; }
+          .header > div .send-in-header > div > div.yellow-btn p span {
+            font-size: 14px; }
         .header > div .send-in-header > div > div.yellow-btn:hover {
           box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64); }
         .header > div .send-in-header > div > div.yellow-btn:active {
@@ -60,46 +69,56 @@ body {
           z-index: 9;
           right: 0px;
           bottom: 0px; }
+          .header > div .send-in-header > div > div.yellow-btn .redo i {
+            color: #424242;
+            padding-left: 7px;
+            line-height: 31px; }
         .header > div .send-in-header > div > div.yellow-btn.sended {
           background: none;
           border: 6px solid; }
-          .header > div .send-in-header > div > div.yellow-btn.sended.green {
+          .header > div .send-in-header > div > div.yellow-btn.sended.green-line {
             border-color: #86D73F;
             color: #86D73F; }
-            .header > div .send-in-header > div > div.yellow-btn.sended.green .redo {
+            .header > div .send-in-header > div > div.yellow-btn.sended.green-line .redo {
               background-color: #86D73F; }
-          .header > div .send-in-header > div > div.yellow-btn.sended.blue {
+          .header > div .send-in-header > div > div.yellow-btn.sended.blue-line {
             border-color: #31BAF9;
             color: #31BAF9; }
-            .header > div .send-in-header > div > div.yellow-btn.sended.blue .redo {
+            .header > div .send-in-header > div > div.yellow-btn.sended.blue-line .redo {
               background-color: #31BAF9; }
-          .header > div .send-in-header > div > div.yellow-btn.sended.orange {
+          .header > div .send-in-header > div > div.yellow-btn.sended.orange-line {
             border-color: #FF982D;
             color: #FF982D; }
-            .header > div .send-in-header > div > div.yellow-btn.sended.orange .redo {
+            .header > div .send-in-header > div > div.yellow-btn.sended.orange-line .redo {
               background-color: #FF982D; }
-          .header > div .send-in-header > div > div.yellow-btn.sended.fat-orange {
+          .header > div .send-in-header > div > div.yellow-btn.sended.fat-orange-line {
             border-color: #FF6C03;
             color: #FF6C03; }
-            .header > div .send-in-header > div > div.yellow-btn.sended.fat-orange .redo {
+            .header > div .send-in-header > div > div.yellow-btn.sended.fat-orange-line .redo {
               background-color: #FF6C03; }
-          .header > div .send-in-header > div > div.yellow-btn.sended.red {
+          .header > div .send-in-header > div > div.yellow-btn.sended.red-line {
             border-color: #FF1200;
             color: #FF1200; }
-            .header > div .send-in-header > div > div.yellow-btn.sended.red .redo {
+            .header > div .send-in-header > div > div.yellow-btn.sended.red-line .redo {
               background-color: #FF1200; }
           .header > div .send-in-header > div > div.yellow-btn.sended .redo {
             display: block; }
-    .header > div .send-in-header .result.green {
-      color: #86D73F; }
-    .header > div .send-in-header .result.blue {
-      color: #31BAF9; }
-    .header > div .send-in-header .result.orange {
-      color: #FF982D; }
-    .header > div .send-in-header .result.fat-orange {
-      color: #FF6C03; }
-    .header > div .send-in-header .result.red {
-      color: #FF1200; }
+    .header > div .send-in-header .result {
+      width: 0px;
+      overflow: visible;
+      padding-left: 10px;
+      font-size: 32px;
+      white-space: nowrap; }
+      .header > div .send-in-header .result .green-line {
+        color: #86D73F; }
+      .header > div .send-in-header .result .blue-line {
+        color: #31BAF9; }
+      .header > div .send-in-header .result .orange-line {
+        color: #FF982D; }
+      .header > div .send-in-header .result .fat-orange-line {
+        color: #FF6C03; }
+      .header > div .send-in-header .result .red-line {
+        color: #FF1200; }
 
 .container {
   padding-top: 48px; }
