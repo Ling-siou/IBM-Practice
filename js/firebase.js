@@ -38,14 +38,11 @@ Record.once('value', function(snapshot){
 })
 
 redo.addEventListener('click', function(){
-  send.classList.remove('sended')
-  send.classList.remove(colorOfLine)
-  resultInBtn.classList.remove('pushed')
   resultInBtn.textContent = '看結果'
+  resultInHeader.textContent = ''
+  outerThis.resultToggle()
   heighCm.value = ''
   weightKg.value = ''
-  resultInHeader.textContent = ''
-  resultInHeader.classList.remove(colorOfLine)
   event.stopPropagation()
 })
 
@@ -54,18 +51,11 @@ send.addEventListener('click', function(e){
   var typeOfWeight = parseFloat(weightKg.value).toString();
 
   if(typeOfHeigh == 'NaN' || typeOfWeight == 'NaN'){
-    // console.log('你是不知道欄位都要輸入數字嗎?')
     alert('欄位都要輸入數字喔')
   }else if(send.classList.contains('sended')){
-    console.log('現在不能按')
-    
+    return
   }else{
-    // console.log({'cm': heighCm.value, 'kg': weightKg.value, 'date': recordTime})
     outerThis.showRecord()
-    send.classList.add('sended')
-    send.classList.add(colorOfLine)
-    console.log(colorOfLine)
-    console.log(BMILav)
   }
 })
 
@@ -98,8 +88,15 @@ var showRecord = function(){
   let newItem = "<div class="+ colorOfLine +"></div><div><p><span>"+ BMILav +"</span></p><p>BMI<span>"+ bmiNum +"</span></p><p>weight<span>"+ weightKg.value +"kg</span></p><p>heigh<span>"+ heighCm.value + "cm</span></p><p>"+ recordTime + "</p></div>"
   addLi.innerHTML = newItem
   list.insertBefore(addLi,list.childNodes[0])
-  resultInBtn.classList.add('pushed')
+  
   resultInBtn.innerHTML = bmiNum + '<br><span>BMI</span>'
-  resultInHeader.classList.add(colorOfLine)
   resultInHeader.textContent = BMILav
+  outerThis.resultToggle()
+}
+
+var resultToggle = function(){
+  send.classList.toggle('sended')
+  send.classList.toggle(colorOfLine)
+  resultInBtn.classList.toggle('pushed')
+  resultInHeader.classList.toggle(colorOfLine)
 }
